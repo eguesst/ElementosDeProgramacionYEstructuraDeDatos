@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.target=Ejer4_Factores_Primos
+comment1.params=n
+comment1.target=java.util.ArrayList\ factoresPrimos(int)
+comment2.params=ini\ fin\ n\ res
+comment2.target=java.util.ArrayList\ factoresPrimos(int,\ int,\ int,\ java.util.ArrayList)
+comment3.params=n
+comment3.target=boolean\ primo(int)
+comment4.params=ini\ fin\ n\ esPrimo
+comment4.target=boolean\ primo(int,\ int,\ int,\ boolean)
+numComments=5

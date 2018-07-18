@@ -1,0 +1,6 @@
+#BlueJ class context
+comment0.target=Ejer1_Potencia
+comment0.text=\r\nEncuentra\ un\ metodo\ que\ permita\ definir\ la\ potencia\ de\ un\ n\u00FAmero.\ Los\ datos\ son\ a\ y\ b\ y\ lo\ que\ se\ desea\r\nes\ calcular\ a\ elevado\ a\ la\ b.\r\n
+comment1.params=a\ b
+comment1.target=int\ potencia(int,\ int)
+numComments=2

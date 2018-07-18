@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.target=Ejer2_Primo
+comment0.text=\r\n\ Escribe\ un\ proceso\ recursivo\ que\ permita\ decidir\ si\ un\ n\u00FAmero\r\n\ natural\ n\ es\ primo\ o\ no.\ \ \r\n
+comment1.params=n
+comment1.target=boolean\ primo(int)
+comment2.params=ini\ fin\ n\ esPrimo
+comment2.target=boolean\ primo(int,\ int,\ int,\ boolean)
+numComments=3
