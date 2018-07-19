@@ -95,4 +95,46 @@ public class Ejer5_12_Secuencia{
     public int multiplicar(int num,Functor f){
         return f.multi(numero,num);
     }
+    //11
+    public int sumaConOtraSecuencia(Ejer5_12_Secuencia sec){
+        return sumar(numero,sec.numero,0,0);
+    }
+    private int sumar(int n1,int n2,int acarreo,int i){
+        int suma = 0;
+        if(n1==0||n2==0){
+            if(n1==0){
+                if(acarreo!=0)
+                    n2+=1;
+                suma = n2*(int)Math.pow(10,((int)(Math.log10(n2)))+1);
+            }else{
+                if(acarreo!=0)
+                    n1+=1;
+                suma = n1*(int)Math.pow(10,((int)(Math.log10(n1)))+1);
+            }
+        }else{
+            int auxSum = n1%10+n2%10+acarreo; 
+            if(auxSum>9){
+                suma = auxSum%10;
+                acarreo = auxSum/10;
+            }else{
+                suma = auxSum;
+                acarreo = 0;
+            }
+            suma = suma*(int)Math.pow(10,i) + sumar(n1/10,n2/10,acarreo,i+1);
+        }  
+        return suma;
+    }
+    //12 v1*v2 / (v1&&v2) -> Rn 
+    public int productoEscalar(Ejer5_12_Secuencia sec){
+        return pe(numero,sec.numero);
+    }
+    private int pe(int n1,int n2){
+        int suma = 0;
+        if(n1/10==0){
+            suma = n1*n2;
+        }else{
+            suma = (n1%10*n2%10) + pe(n1/10,n2/10);
+        }
+        return suma;
+    }
 }
